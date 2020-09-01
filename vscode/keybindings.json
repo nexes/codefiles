@@ -1,16 +1,16 @@
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "ctrl+d",
-    "command": "-extension.vim_ctrl+d",
-    "when": "editorTextFocus && vim.active && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "editor.action.joinLines"
-  },
-  {
-    "key": "ctrl+;",
-    "command": "findThenJump.initiate"
-  }
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "findThenJump.initiate"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "extension.advancedNewFile"
+    }
 ]
