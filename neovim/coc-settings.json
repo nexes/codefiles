@@ -1,0 +1,8 @@
+{
+    "explorer.floating.border.title": "Files",
+    "explorer.icon.enableVimDevicons": true,
+    "explorer.file.column.git.showIgnored": true,
+
+    "clangd.fallbackFlags": ["--std=c++17"],
+    "clangd.disableSnippetCompletion": true
+}
