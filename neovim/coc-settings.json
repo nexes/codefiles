@@ -3,6 +3,12 @@
 
     "suggest.removeDuplicateItems": true,
 
+    "diagnostic.enable": true,
+    "diagnostic.enableSign": true,
+    "diagnostic.messageTarget": "echo",
+    "diagnostic.enableMessage": "always",
+    "diagnostic.virtualText": true,
+
     "explorer.floating.border.title": "Files",
     "explorer.icon.enableVimDevicons": true,
     "explorer.file.column.git.showIgnored": true,
@@ -10,6 +16,10 @@
     "clangd.fallbackFlags": ["--std=c++17"],
     "clangd.disableSnippetCompletion": true,
 
+    "coc.preferences.snippets.enable": false,
     "coc.preferences.bracketEnterImprove": true,
-    "coc.preferences.currentFunctionSymbolAutoUpdate": true
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+
+    "rust-analyzer.serverPath": "/usr/bin/rust-analyzer"
+
 }
