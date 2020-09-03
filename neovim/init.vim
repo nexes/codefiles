@@ -9,7 +9,6 @@ Plug 'kdheepak/lazygit.nvim'    , {'branch': 'nvim-v0.4.3' }
 Plug 'neovim/nvim-lsp'
 Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
-Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 
 " -----------------test for telescope-----------------
@@ -42,6 +41,8 @@ set hidden
 set nowritebackup
 set mouse=a
 set belloff=all
+set cmdheight=2
+set signcolumn=yes
 
 set expandtab
 set tabstop=4
@@ -58,7 +59,8 @@ set nocursorcolumn
 set lazyredraw
 set showmatch
 set title
-set ignorecase smartcase
+set ignorecase 
+set smartcase
 set splitright
 set splitbelow
 set noerrorbells
@@ -73,8 +75,8 @@ vnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is we
 
 
 " ---------------------Plugin settings-------------------------
+source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings and keybindings
 source ~/.config/nvim/plugin-config/coc-explorer-settings.vim   " coc explorer settings
 source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
 source ~/.config/nvim/plugin-config/airline-settings.vim        " aireline settings
-
 
