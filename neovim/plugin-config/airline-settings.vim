@@ -11,3 +11,5 @@ let g:airline_section_c='%t'
 let g:airline_section_z=''
 
 let g:aireline#extensions#coc#enabled=1
+
+let g:airline_theme='base16_default'

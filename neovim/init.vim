@@ -6,10 +6,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'kdheepak/lazygit.nvim'    , {'branch': 'nvim-v0.4.3' }
-Plug 'neovim/nvim-lsp'
+" Plug 'neovim/nvim-lsp'
 Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
+Plug 'cdelledonne/vim-cmake'
 
 " -----------------test for telescope-----------------
 " Plug 'nvim-lua/popup.nvim'
@@ -17,8 +18,7 @@ Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 " Plug 'nvim-lua/telescope.nvim'
 " -----------------test for telescope-----------------
 
-"themes
-Plug 'morhetz/gruvbox'
+" -------------------------themes------------------------------
 Plug 'w0ng/vim-hybrid'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -35,10 +35,14 @@ colorscheme hybrid
 nnoremap <Space> <Nop>
 let g:mapleader="\<Space>"
 
+" system clipboard
+set clipboard+=unnamedplus
+
 set guifont="Cascadia Code PL"
 set nobackup
 set hidden
 set nowritebackup
+set noswapfile
 set mouse=a
 set belloff=all
 set cmdheight=2
@@ -49,6 +53,8 @@ set tabstop=4
 set softtabstop=4
 set shiftround
 set shiftwidth=4
+set autoindent
+set smartindent
 
 set nowrap
 set number
@@ -65,7 +71,6 @@ set splitright
 set splitbelow
 set noerrorbells
 set autoread
-
 set updatetime=1000
 
 " -------------------basic keybinding------------------------
@@ -73,6 +78,10 @@ nnoremap <silent> <c-s> :<c-u>update<cr>        " ctrl-s to save buffer
 nnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment line
 vnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment selected
 
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
 
 " ---------------------Plugin settings-------------------------
 source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings and keybindings
