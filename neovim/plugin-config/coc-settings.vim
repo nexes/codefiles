@@ -70,3 +70,6 @@ nmap <key>=  <Plug>(coc-format-selected)
 " Show all diagnostics.
 nnoremap <silent><nowait> <leader>e  :<C-u>CocList diagnostics<cr>
 
+" search all files in the project and display the results. Easy to replace or
+" go-to 
+nnoremap <C-g> :CocSearch 

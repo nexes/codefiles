@@ -1,7 +1,7 @@
 scriptencoding utf-8
 
+" -------------------------plugins------------------------------
 call plug#begin ("~/.vim/plugged")
-
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -12,31 +12,44 @@ Plug 'Shougo/deoplete-lsp'
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 Plug 'cdelledonne/vim-cmake'
 
-" -----------------test for telescope-----------------
+" ---------------------test for telescope---------------------
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'nvim-lua/plenary.nvim'
 " Plug 'nvim-lua/telescope.nvim'
-" -----------------test for telescope-----------------
+" ---------------------test for telescope---------------------
 
 " -------------------------themes------------------------------
+Plug 'sheerun/vim-polyglot'
+Plug 'sainnhe/gruvbox-material'
 Plug 'w0ng/vim-hybrid'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
-" ---------------------basic settings--------------------------
+" -----------------------theme setup----------------------------
 filetype plugin indent on
-syntax on
-colorscheme hybrid
+autocmd FileType c,cpp,cs,java,rust setlocal commentstring=//\ %s
 
+syntax on
+set termguicolors
+set background=dark
+
+" colorscheme hybrid
+let g:gruvbox_material_background='hard'
+let g:gruvbox_material_menu_selection_background = 'blue'
+let g:gruvbox_material_diagnostic_line_highlight = 1
+let g:gruvbox_material_better_performance = 1
+colorscheme gruvbox-material
+
+" ---------------------basic settings--------------------------
 " set leader key
 " let g:mapleader=','
 nnoremap <Space> <Nop>
 let g:mapleader="\<Space>"
 
 " system clipboard
-set clipboard+=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 set guifont="Cascadia Code PL"
 set nobackup
@@ -72,11 +85,14 @@ set splitbelow
 set noerrorbells
 set autoread
 set updatetime=1000
+set inccommand=nosplit
 
 " -------------------basic keybinding------------------------
 nnoremap <silent> <c-s> :<c-u>update<cr>        " ctrl-s to save buffer
 nnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment line
 vnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment selected
+
+nnoremap <silent> <leader>/ :nohl<CR>           " clear search highlight
 
 " inoremap ( ()<left>
 " inoremap [ []<left>
