@@ -19,28 +19,21 @@ Plug 'cdelledonne/vim-cmake'
 " ---------------------test for telescope---------------------
 
 " -------------------------themes------------------------------
-Plug 'sheerun/vim-polyglot'
-Plug 'sainnhe/gruvbox-material'
-Plug 'w0ng/vim-hybrid'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
 " -----------------------theme setup----------------------------
-filetype plugin indent on
+filetype plugin on
 autocmd FileType c,cpp,cs,java,rust setlocal commentstring=//\ %s
 
 syntax on
 set termguicolors
 set background=dark
-
-" colorscheme hybrid
-let g:gruvbox_material_background='hard'
-let g:gruvbox_material_menu_selection_background = 'blue'
-let g:gruvbox_material_diagnostic_line_highlight = 1
-let g:gruvbox_material_better_performance = 1
-colorscheme gruvbox-material
+colorscheme nord
 
 " ---------------------basic settings--------------------------
 " set leader key
@@ -92,12 +85,17 @@ nnoremap <silent> <c-s> :<c-u>update<cr>        " ctrl-s to save buffer
 nnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment line
 vnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment selected
 
+nnoremap <silent> <c-h> :bp<Cr>                 " move to the previous buffer
+nnoremap <silent> <c-l> :bn<Cr>                 " move to the next buffer
+
 nnoremap <silent> <leader>/ :nohl<CR>           " clear search highlight
 
-" inoremap ( ()<left>
-" inoremap [ []<left>
-" inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
+" ----------------ugly keybinding for file types only--------------------
+" TODO move into ftplugin
+autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap ( ()<left>
+autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap [ []<left>
+autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap { {}<left>
+autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap {<CR> {<CR>}<ESC>O
 
 " ---------------------Plugin settings-------------------------
 source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings and keybindings
