@@ -11,6 +11,7 @@ Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 Plug 'cdelledonne/vim-cmake'
+Plug 'sbdchd/neoformat'
 
 " ---------------------test for telescope---------------------
 " Plug 'nvim-lua/popup.nvim'
@@ -90,11 +91,11 @@ nnoremap <silent> <c-l> :bn<Cr>                 " move to the next buffer
 
 nnoremap <silent> <leader>/ :nohl<CR>           " clear search highlight
 
-" ----------------ugly keybinding for file types only--------------------
+" ----------------ugly keybinding for certain file types only--------------------
 " TODO move into ftplugin
-autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap ( ()<left>
-autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap [ []<left>
-autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap { {}<left>
+" autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap ( ()<left>
+" autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap [ []<left>
+" autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap { {}<left>
 autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap {<CR> {<CR>}<ESC>O
 
 " ---------------------Plugin settings-------------------------
@@ -102,4 +103,5 @@ source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings a
 source ~/.config/nvim/plugin-config/coc-explorer-settings.vim   " coc explorer settings
 source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
 source ~/.config/nvim/plugin-config/airline-settings.vim        " aireline settings
+source ~/.config/nvim/plugin-config/neoformat-settings.vim      " settings for formating files
 

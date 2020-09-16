@@ -21,6 +21,7 @@
 
     "coc.preferences.snippets.enable": false,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "coc.preferences.formatOnSaveFiletypes": ["go", "rust", "json"],
 
     "rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
     "rust-analyzer.inlayHints.chainingHints": false
