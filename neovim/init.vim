@@ -11,6 +11,8 @@ Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 Plug 'cdelledonne/vim-cmake'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
 
 " ---------------------test for telescope---------------------
