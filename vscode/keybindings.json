@@ -44,10 +44,11 @@
     },
     {
         "key": "shift+;",
-        "command": "workbench.action.showCommands"
+        "command": "workbench.action.showCommands",
+        "when": "vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+p",
-        "command": "-workbench.action.showCommands"
+        "command": "-workbench.action.showCommands",
     }
 ]
