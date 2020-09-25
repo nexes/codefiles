@@ -40,7 +40,7 @@
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "all",
-  "editor.find.autoFindInSelection": "always",
+  "editor.find.autoFindInSelection": "multiline",
   "editor.overviewRulerBorder": false,
   "editor.suggest.showSnippets": false,
   "editor.suggestSelection": "first",
@@ -48,7 +48,6 @@
   "editor.occurrencesHighlight": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.renderIndentGuides": false,
-  "editor.matchBrackets": "never",
   "window.restoreWindows": "none",
   "window.titleBarStyle": "custom",
   "window.title": "${activeEditorMedium}",
@@ -141,6 +140,9 @@
       "editorCursor.foreground": "#3f6981",
       "editor.findMatchHighlightBackground": "#1b5475",
       "editorSuggestWidget.selectedBackground": "#12557c"
+    },
+    "[Hybrid Next (Gray Background)]": {
+      "statusBar.background": "#3f3f3f"
     }
   },
   "workbench.statusBar.visible": true,
