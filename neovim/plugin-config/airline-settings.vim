@@ -8,7 +8,8 @@ let g:airline_section_z=''
 
 let g:aireline#extensions#coc#enabled=1
 
-let g:airline_theme='nord'
+" let g:airline_theme='nord'
+let g:airline_theme='hybrid'
 
 "-----------------from :h airline-customization-----------------------
 if !exists('g:airline_symbols')

@@ -36,7 +36,8 @@ autocmd FileType c,cpp,cs,java,rust setlocal commentstring=//\ %s
 syntax on
 set termguicolors
 set background=dark
-colorscheme nord
+" colorscheme nord
+colorscheme hybrid_material
 
 " ---------------------basic settings--------------------------
 " set leader key
