@@ -11,6 +11,8 @@ let g:aireline#extensions#coc#enabled=1
 " let g:airline_theme='nord'
 let g:airline_theme='hybrid'
 
+let g:aireline_powerline_fonts=1
+
 "-----------------from :h airline-customization-----------------------
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
