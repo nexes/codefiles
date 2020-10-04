@@ -60,5 +60,18 @@
         "key": "ctrl+h",
         "command": "workbench.action.previousEditor",
         "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+up",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
     }
 ]
