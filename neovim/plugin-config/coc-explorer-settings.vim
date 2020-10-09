@@ -29,9 +29,10 @@ let g:coc_explorer_global_presets = {
 \     'open-action-strategy': 'sourceWindow',
 \   },
 \   'simplify': {
-\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\    'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
 \   }
 \ }
 
 
 nmap <C-p> :CocCommand explorer --preset floatingTop<CR>     " use preset to open coc explorer
+nmap <C-b> :CocCommand explorer<CR>

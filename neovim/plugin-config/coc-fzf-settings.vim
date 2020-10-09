@@ -4,7 +4,7 @@
 let g:fzf_preview_command='bat --theme=1337 --color=always --plain {-1}'
 
 " use ripgrep since I have it installed pass command line args here
-let g:fzf_preview_filelist_command = 'rg --files --hidden --follow --no-messages -g \!"* *"'
+let g:fzf_preview_filelist_command = 'rg --files --follow --no-messages -g \!"* *"'
 
 " set devicons in the preview window
 let g:fzf_preview_use_dev_icons=1

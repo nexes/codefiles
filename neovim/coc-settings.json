@@ -13,8 +13,12 @@
     "diagnostic.refreshOnInsertMode": true,
 
     "explorer.floating.border.title": "Files",
-    "explorer.icon.enableVimDevicons": true,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
     "explorer.file.column.git.showIgnored": true,
+    "explorer.file.showHiddenFiles": true,
+    "explorer.file.column.indent.indentLine": true,
+    "explorer.quitOnOpen": true,
 
     "clangd.fallbackFlags": ["-std=c++17"],
     "clangd.disableSnippetCompletion": true,
