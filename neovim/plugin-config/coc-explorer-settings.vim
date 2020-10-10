@@ -34,5 +34,5 @@ let g:coc_explorer_global_presets = {
 \ }
 
 
-nmap <C-p> :CocCommand explorer --preset floatingTop<CR>     " use preset to open coc explorer
+" nmap <C-p> :CocCommand explorer --preset floatingTop<CR>     " use preset to open coc explorer
 nmap <C-b> :CocCommand explorer<CR>
