@@ -9,6 +9,10 @@ let g:fzf_preview_filelist_command = 'rg --files --follow --no-messages -g \!"* 
 " set devicons in the preview window
 let g:fzf_preview_use_dev_icons=1
 
+" window size position
+let g:fzf_preview_floating_window_rate=0.75
+let g:fzf_preview_fzf_preview_window_option = 'up:70%'
+
 nnoremap <silent> <leader>b :CocCommand fzf-preview.Buffers<CR>             " list buffers
 nnoremap <silent> <leader>g :CocCommand fzf-preview.GitFiles<CR>            " list git files
 nnoremap <silent> <C-p> :CocCommand fzf-preview.DirectoryFiles<CR>          " find directory files
