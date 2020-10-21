@@ -148,7 +148,8 @@
     "[Nord]": {
       "editor.selectionBackground": "#12557c",
       "editorSuggestWidget.selectedBackground": "#12557c",
-      "editorBracketMatch.border": "#0000",
+      "editorBracketMatch.background": "#576674",
+      "editorBracketMatch.border": "#576674",
       "peekViewEditor.background": "#222a35",
       "peekViewResult.background": "#222a35",
       "peekViewTitle.background": "#141518",
@@ -166,4 +167,5 @@
   "rust-analyzer.inlayHints.typeHints": false,
   "rust-analyzer.hoverActions.enable": false,
   "rust-analyzer.lens.enable": false,
+  "C_Cpp.updateChannel": "Insiders",
 }
