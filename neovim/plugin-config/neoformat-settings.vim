@@ -11,7 +11,7 @@ let g:neoformat_cpp_clangformat = {
                     \ Cpp11BracedListStyle: true,
                     \ BreakBeforeBraces: Custom,
                     \ BraceWrapping: {AfterFunction: true, AfterClass: true, AfterStruct: true,
-                    \ BeforeCatch: true, AfterControlStatement: true},
+                    \ BeforeCatch: true, AfterControlStatement: false},
                     \ AllowShortIfStatementsOnASingleLine: true,
                     \ NamespaceIndentation: All,
                     \ IndentCaseLabels: false,
