@@ -48,7 +48,7 @@ let g:mapleader="\<Space>"
 " system clipboard
 set clipboard^=unnamed,unnamedplus
 
-set guifont="FiraCode Nerd Font"
+set guifont="Fira Code Regular"
 set nobackup
 set hidden
 set nowritebackup
