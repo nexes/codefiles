@@ -4,7 +4,6 @@ scriptencoding utf-8
 call plug#begin ("~/.vim/plugged")
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-commentary'
-"Plug 'tpope/vim-surround'
 Plug 'kdheepak/lazygit.nvim'    , {'branch': 'nvim-v0.4.3' }
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 Plug 'cdelledonne/vim-cmake'
@@ -101,9 +100,14 @@ nnoremap <silent> <c-h> :bp<Cr>
 nnoremap <silent> <c-l> :bn<Cr>
 
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>bb <cmd>lua require('telescope.builtin').buffers()<cr>
 
 " clear search highlights
 nnoremap <silent> <leader>/ :nohl<CR>
+
+" open and close terminal
+nnoremap <leader>t :split +resize15 term://bash<CR> i
+tnoremap <Esc> <C-\><C-n> :bd!<CR>
 
 " coc extensions:
 "   coc-clangd
