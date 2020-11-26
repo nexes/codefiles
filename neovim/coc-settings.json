@@ -20,14 +20,11 @@
     "explorer.file.column.indent.indentLine": true,
     "explorer.quitOnOpen": true,
 
-    "clangd.fallbackFlags": ["-std=c++17"],
     "clangd.disableSnippetCompletion": true,
 
     "coc.preferences.snippets.enable": false,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "coc.preferences.formatOnSaveFiletypes": ["go", "rust", "json"],
-
-    "clangd.path": "/var/home/nexes/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd",
 
     "rust-analyzer.inlayHints.chainingHints": false
 }

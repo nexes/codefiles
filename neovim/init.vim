@@ -2,28 +2,27 @@ scriptencoding utf-8
 
 " -------------------------plugins------------------------------
 call plug#begin ("~/.vim/plugged")
-Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 Plug 'kdheepak/lazygit.nvim'    , {'branch': 'nvim-v0.4.3' }
-" Plug 'neovim/nvim-lsp'
-Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete-lsp'
 Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
 Plug 'cdelledonne/vim-cmake'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'sbdchd/neoformat'
 
-" ---------------------test for telescope---------------------
-" Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'nvim-lua/telescope.nvim'
-" ---------------------test for telescope---------------------
+" ------------telescope requires neovim v >= 0.5----------------
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+" ------------telescope requires neovim v >= 0.5----------------
+
+" Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete-lsp'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
+"Plug 'sbdchd/neoformat'
 
 " -------------------------themes------------------------------
-Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'arcticicestudio/nord-vim'
+Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -31,24 +30,26 @@ call plug#end()
 
 " -----------------------theme setup----------------------------
 filetype plugin on
-autocmd FileType c,cpp,cs,java,rust setlocal commentstring=//\ %s
 
 syntax on
 set termguicolors
 set background=dark
-" colorscheme nord
-colorscheme hybrid_material
+colorscheme gruvbox-material
+let g:gruvbox_material_disable_italic_comment = 1
 
 " ---------------------basic settings--------------------------
+let g:cmake_generate_options = ["-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE"]
 " set leader key
-" let g:mapleader=','
 nnoremap <Space> <Nop>
 let g:mapleader="\<Space>"
+
+" change comment to double forward slash
+autocmd FileType c,cpp,cs,java,rust setlocal commentstring=//\ %s
 
 " system clipboard
 set clipboard^=unnamed,unnamedplus
 
-set guifont="Fira Code Regular"
+set guifont="FiraCode Nerd Font"
 set nobackup
 set hidden
 set nowritebackup
@@ -83,28 +84,36 @@ set noerrorbells
 set autoread
 set updatetime=1000
 set inccommand=nosplit
+" popup menu
+set completeopt=menuone,noinsert,noselect
+set shortmess+=c
 
 " -------------------basic keybinding------------------------
-nnoremap <silent> <c-s> :<c-u>update<cr>        " ctrl-s to save buffer
-nnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment line
-vnoremap <silent> <C-_> :Commentary<CR>         " <c-/>. I don't know, vim is weird I guess. comment selected
+" ctrl-s to save buffer
+nnoremap <silent> <c-s> :<c-u>update<cr>        
 
-nnoremap <silent> <c-h> :bp<Cr>                 " move to the previous buffer
-nnoremap <silent> <c-l> :bn<Cr>                 " move to the next buffer
+" ctrl+/ to comment the line in normal and visual mode
+nnoremap <silent> <C-_> :Commentary<CR>
+vnoremap <silent> <C-_> :Commentary<CR>
 
-nnoremap <silent> <leader>/ :nohl<CR>           " clear search highlight
+" move to the previous and next buffer
+nnoremap <silent> <c-h> :bp<Cr>
+nnoremap <silent> <c-l> :bn<Cr>
 
-" ----------------ugly keybinding for certain file types only--------------------
-" TODO move into ftplugin
-" autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap ( ()<left>
-" autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap [ []<left>
-" autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap { {}<left>
-autocmd FileType c,cpp,cs,java,rust,json,javascript,typescript inoremap {<CR> {<CR>}<ESC>O
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 
+" clear search highlights
+nnoremap <silent> <leader>/ :nohl<CR>
+
+" coc extensions:
+"   coc-clangd
+"   coc-rust-analyzer
+"   coc-explorer
+"   coc-pairs
+"   coc-fzf-preview
 " ---------------------Plugin settings-------------------------
 source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings and keybindings
 source ~/.config/nvim/plugin-config/coc-explorer-settings.vim   " coc explorer settings
-source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
+"source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
 source ~/.config/nvim/plugin-config/airline-settings.vim        " aireline settings
-source ~/.config/nvim/plugin-config/neoformat-settings.vim      " settings for formating files
-
+"source ~/.config/nvim/plugin-config/neoformat-settings.vim      " settings for formating files

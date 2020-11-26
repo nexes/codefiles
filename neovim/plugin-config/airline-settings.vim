@@ -4,12 +4,15 @@ let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tabline#buffer_nr_show=1
 
 let g:airline_section_c='%f'
-let g:airline_section_z=''
+let g:airline_section_y=''
+let g:airline_section_z = "%l/%L :%c"
+
+let g:airline_skip_empty_sections=1
 
 let g:aireline#extensions#coc#enabled=1
 
 " let g:airline_theme='nord'
-let g:airline_theme='hybrid'
+let g:airline_theme='gruvbox_material'
 
 let g:aireline_powerline_fonts=1
 

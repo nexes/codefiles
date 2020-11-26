@@ -21,6 +21,7 @@ let g:coc_explorer_global_presets = {
 \     'floating-position': 'left-center',
 \     'floating-width': 50,
 \     'open-action-strategy': 'sourceWindow',
+\     'quit-on-open': v:false,
 \   },
 \   'floatingRightside': {
 \     'position': 'floating',
