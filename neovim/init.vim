@@ -16,9 +16,9 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
 " Plug 'Shougo/deoplete-lsp'
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-"Plug 'sbdchd/neoformat'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'sbdchd/neoformat'
 
 " -------------------------themes------------------------------
 Plug 'sainnhe/gruvbox-material'
@@ -118,6 +118,6 @@ tnoremap <Esc> <C-\><C-n> :bd!<CR>
 " ---------------------Plugin settings-------------------------
 source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings and keybindings
 source ~/.config/nvim/plugin-config/coc-explorer-settings.vim   " coc explorer settings
-"source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
 source ~/.config/nvim/plugin-config/airline-settings.vim        " aireline settings
+"source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
 "source ~/.config/nvim/plugin-config/neoformat-settings.vim      " settings for formating files

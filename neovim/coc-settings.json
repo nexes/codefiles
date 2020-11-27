@@ -24,7 +24,7 @@
 
     "coc.preferences.snippets.enable": false,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-    "coc.preferences.formatOnSaveFiletypes": ["go", "rust", "json"],
+    "coc.preferences.formatOnSaveFiletypes": ["cpp", "go", "rust", "json"],
 
     "rust-analyzer.inlayHints.chainingHints": false
 }
