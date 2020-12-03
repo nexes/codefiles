@@ -26,5 +26,6 @@
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "coc.preferences.formatOnSaveFiletypes": ["cpp", "go", "rust", "json"],
 
-    "rust-analyzer.inlayHints.chainingHints": false
+    "rust-analyzer.inlayHints.chainingHints": false,
+    "rust-analyzer.inlayHints.typeHints": false
 }
