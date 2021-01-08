@@ -27,6 +27,11 @@ Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
+
+" -------------------------lua imports------------------------------
+lua require('telescopeconfig')
+
+
 " -----------------------theme setup----------------------------
 filetype plugin on
 
