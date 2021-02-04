@@ -21,6 +21,7 @@
   "search.useIgnoreFiles": true,
   "search.showLineNumbers": true,
   "search.searchOnType": true,
+  "search.mode": "reuseEditor",
   "editor.hover.enabled": false,
   "editor.renderIndentGuides": false,
   "editor.autoClosingBrackets": "always",
