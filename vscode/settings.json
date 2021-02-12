@@ -169,6 +169,5 @@
   "rust-analyzer.inlayHints.typeHints": false,
   "rust-analyzer.hoverActions.enable": false,
   "rust-analyzer.lens.enable": false,
-  "C_Cpp.updateChannel": "Insiders",
   "gruvboxConcoctis.useItalicFont": false
 }
