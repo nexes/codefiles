@@ -1,7 +1,7 @@
 " config for coc-fzf-preview
 
 " use bat instead of cat, recommended by coc-fzf-preview
-let g:fzf_preview_command='bat --theme=1337 --color=always --plain {-1}'
+let g:fzf_preview_command='batcat --theme=1337 --color=always --plain {-1}'
 
 " use ripgrep since I have it installed pass command line args here
 let g:fzf_preview_filelist_command = 'rg --files --follow --no-messages -g \!"* *"'

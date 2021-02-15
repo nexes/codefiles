@@ -1,0 +1,32 @@
+{
+    "codeLens.enable": true,
+
+    "suggest.removeDuplicateItems": true,
+    "suggest.autoTrigger": "trigger",
+    "suggest.triggerAfterInsertEnter": true,
+
+    "diagnostic.enable": true,
+    "diagnostic.enableSign": true,
+    "diagnostic.messageTarget": "echo",
+    "diagnostic.enableMessage": "always",
+    "diagnostic.virtualText": true,
+    "diagnostic.refreshOnInsertMode": true,
+
+    "explorer.floating.border.title": "Files",
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.git.showIgnored": true,
+    "explorer.file.showHiddenFiles": true,
+    "explorer.file.column.indent.indentLine": true,
+    "explorer.quitOnOpen": true,
+
+    "clangd.disableSnippetCompletion": true,
+
+    "coc.preferences.snippets.enable": false,
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "coc.preferences.formatOnSaveFiletypes": ["cpp", "go", "rust", "json"],
+
+    "rust-analyzer.inlayHints.chainingHints": false,
+    "rust-analyzer.inlayHints.typeHints": false,
+    "clangd.path": "/home/nexes/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
+}
