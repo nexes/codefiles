@@ -1,38 +1,24 @@
-scriptencoding utf-8
-
 " -------------------------plugins------------------------------
 call plug#begin ("~/.vim/plugged")
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-commentary'
-Plug 'kdheepak/lazygit.nvim'    , {'branch': 'nvim-v0.4.3' }
-Plug 'neoclide/coc.nvim'        , {'branch': 'release' }
+Plug 'neovim/nvim-lspconfig'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'mhartington/formatter.nvim'
 Plug 'cdelledonne/vim-cmake'
 
-" we will be using fzf instead of telescope. 
-" if you change your mind, uncomment all lua lines and telescope lines
-"
 " ------------telescope requires neovim v >= 0.5----------------
-" Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'nvim-telescope/telescope.nvim'
-" ------------telescope requires neovim v >= 0.5----------------
-
-" Plug 'Shougo/deoplete.nvim'     , {'do': ':UpdateRemotePlugins' }
-" Plug 'Shougo/deoplete-lsp'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-" Plug 'sbdchd/neoformat'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " -------------------------themes------------------------------
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 call plug#end()
-
-" -------------------------lua imports------------------------------
-" lua require('telescopeconfig')
-
 
 " -----------------------theme setup----------------------------
 filetype plugin on
@@ -96,7 +82,7 @@ set shortmess+=c
 
 " -------------------basic keybinding------------------------
 " ctrl-s to save buffer
-nnoremap <silent> <c-s> :<c-u>update<cr>        
+nnoremap <silent> <c-s> :<c-u>update<cr>
 
 " ctrl+/ to comment the line in normal and visual mode
 nnoremap <silent> <C-_> :Commentary<CR>
@@ -106,9 +92,6 @@ vnoremap <silent> <C-_> :Commentary<CR>
 nnoremap <silent> <c-h> :bp<Cr>
 nnoremap <silent> <c-l> :bn<Cr>
 
-" nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-" nnoremap <leader>bb <cmd>lua require('telescope.builtin').buffers()<cr>
-
 " clear search highlights
 nnoremap <silent> <leader>/ :nohl<CR>
 
@@ -116,15 +99,13 @@ nnoremap <silent> <leader>/ :nohl<CR>
 nnoremap <leader>t :split +resize15 term://bash<CR> i
 tnoremap <Esc> <C-\><C-n> :bd!<CR>
 
-" coc extensions:
-"   coc-clangd
-"   coc-rust-analyzer
-"   coc-explorer
-"   coc-pairs
-"   coc-fzf-preview
 " ---------------------Plugin settings-------------------------
-source ~/.config/nvim/plugin-config/coc-settings.vim            " coc settings and keybindings
-source ~/.config/nvim/plugin-config/coc-explorer-settings.vim   " coc explorer settings
-source ~/.config/nvim/plugin-config/airline-settings.vim        " aireline settings
-source ~/.config/nvim/plugin-config/coc-fzf-settings.vim        " coc fzf-preview settings
-"source ~/.config/nvim/plugin-config/neoformat-settings.vim      " settings for formating files
+"  TODO: move over to lua file
+source ~/.config/nvim/plugin-config/airline-settings.vim
+source ~/.config/nvim/plugin-config/tree-settings.vim
+
+luafile ~/.config/nvim/lua/telescope-config.lua
+luafile ~/.config/nvim/lua/lsp-config.lua
+luafile ~/.config/nvim/lua/lspsaga-config.lua
+luafile ~/.config/nvim/lua/format-config.lua
+luafile ~/.config/nvim/lua/tree-config.lua
