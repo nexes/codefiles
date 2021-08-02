@@ -48,8 +48,9 @@ set nowritebackup
 set noswapfile
 set mouse=a
 set belloff=all
-set cmdheight=2
+set cmdheight=1
 set signcolumn=yes
+set colorcolumn=90
 
 set expandtab
 set tabstop=4
@@ -94,10 +95,6 @@ nnoremap <silent> <c-l> :bn<Cr>
 
 " clear search highlights
 nnoremap <silent> <leader>/ :nohl<CR>
-
-" open and close terminal
-nnoremap <leader>t :split +resize15 term://bash<CR> i
-tnoremap <Esc> <C-\><C-n> :bd!<CR>
 
 " ---------------------Plugin settings-------------------------
 "  TODO: move over to lua file
