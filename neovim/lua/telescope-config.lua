@@ -3,6 +3,7 @@ require('telescope').setup {
         layout_strategy = "vertical",
     --     prompt_position = "top",
     --     preview_cutoff = 90
+        file_ignore_patterns = {"node_modules/*", "target/*"}
     }
 }
 
