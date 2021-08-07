@@ -81,6 +81,28 @@ set inccommand=nosplit
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
+" setup fzf window to attach at the bottom
+let g:fzf_layout = { 'down': '25%' }
+
+" ------------------Search Functions------------------
+set grepprg=rg\ --vimgrep\ --smart-case\ --pretty\ --follow
+
+" search for the keyword in all currently open buffers
+function! SearchFunc(word)
+    " remember current buffer to later return to it
+    let curr_buff = bufnr("%")
+
+    " clear the quicklist
+    call setqflist([])
+
+    execute 'silent bufdo grepadd! '.a:word.' %'
+    execute 'buffer '.curr_buff
+    execute 'copen'
+endfunction
+
+command! -nargs=+ Search call SearchFunc(<q-args>)
+command! -nargs=+ SearchAll execute 'silent grep! <args>' | copen
+
 " -------------------basic keybinding------------------------
 " ctrl-s to save buffer
 nnoremap <silent> <c-s> :<c-u>update<cr>
@@ -96,12 +118,15 @@ nnoremap <silent> <c-l> :bn<Cr>
 " clear search highlights
 nnoremap <silent> <leader>/ :nohl<CR>
 
+" find files with fzf
+nnoremap <silent> <c-p> :Files<cr>
+
 " ---------------------Plugin settings-------------------------
 "  TODO: move over to lua file
 source ~/.config/nvim/plugin-config/airline-settings.vim
 source ~/.config/nvim/plugin-config/tree-settings.vim
 
-luafile ~/.config/nvim/lua/telescope-config.lua
+" luafile ~/.config/nvim/lua/telescope-config.lua
 luafile ~/.config/nvim/lua/lsp-config.lua
 luafile ~/.config/nvim/lua/lspsaga-config.lua
 luafile ~/.config/nvim/lua/format-config.lua
