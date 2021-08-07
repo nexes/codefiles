@@ -6,31 +6,29 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'mhartington/formatter.nvim'
 Plug 'cdelledonne/vim-cmake'
-
-" ------------telescope requires neovim v >= 0.5----------------
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'tmsvg/pear-tree'
 
 " -------------------------themes------------------------------
-Plug 'sainnhe/gruvbox-material'
+Plug 'arzg/vim-corvine'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " -----------------------theme setup----------------------------
 filetype plugin on
-
 syntax on
 set termguicolors
-set background=dark
-colorscheme gruvbox-material
-let g:gruvbox_material_disable_italic_comment = 1
+
+colorscheme corvine
 
 " ---------------------basic settings--------------------------
 let g:cmake_generate_options = ["-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE"]
+
 " set leader key
 nnoremap <Space> <Nop>
 let g:mapleader="\<Space>"
@@ -64,7 +62,7 @@ set nowrap
 set number
 set noshowmode
 set secure
-set cursorline
+" set cursorline
 set nocursorcolumn
 set lazyredraw
 set showmatch

@@ -8,10 +8,18 @@ require('telescope').setup {
 }
 
 -- open find files like vscode
+-- vim.api.nvim_set_keymap(
+--     'n', 
+--     '<C-p>',
+--     '<cmd>lua require(\'telescope.builtin\').find_files()<cr>',
+--     {noremap = true, silent = true}
+-- )
+
+-- search the directory
 vim.api.nvim_set_keymap(
     'n', 
-    '<C-p>',
-    '<cmd>lua require(\'telescope.builtin\').find_files()<cr>',
+    '<leader>f',
+    '<cmd>lua require(\'telescope.builtin\').live_grep()<cr>',
     {noremap = true, silent = true}
 )
 
