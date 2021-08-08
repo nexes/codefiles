@@ -11,12 +11,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'mhartington/formatter.nvim'
 Plug 'cdelledonne/vim-cmake'
 Plug 'tmsvg/pear-tree'
+Plug 'hoob3rt/lualine.nvim'
 
 " -------------------------themes------------------------------
 Plug 'arzg/vim-corvine'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " -----------------------theme setup----------------------------
@@ -119,12 +120,16 @@ nnoremap <silent> <leader>/ :nohl<CR>
 " find files with fzf
 nnoremap <silent> <c-p> :Files<cr>
 
+" view open buffers
+nnoremap <silent> <c-o> :Buffers<cr>
+
 " ---------------------Plugin settings-------------------------
 "  TODO: move over to lua file
-source ~/.config/nvim/plugin-config/airline-settings.vim
+" source ~/.config/nvim/plugin-config/airline-settings.vim
 source ~/.config/nvim/plugin-config/tree-settings.vim
 
 " luafile ~/.config/nvim/lua/telescope-config.lua
+luafile ~/.config/nvim/lua/lualine-config.lua
 luafile ~/.config/nvim/lua/lsp-config.lua
 luafile ~/.config/nvim/lua/lspsaga-config.lua
 luafile ~/.config/nvim/lua/format-config.lua

@@ -12,7 +12,8 @@ let g:airline_skip_empty_sections=1
 let g:aireline#extensions#coc#enabled=1
 
 " let g:airline_theme='nord'
-let g:airline_theme='gruvbox_material'
+" let g:airline_theme='gruvbox_material'
+let g:airline_theme='base16_black_metal'
 
 let g:aireline_powerline_fonts=1
 
