@@ -28,9 +28,21 @@ set termguicolors
 colorscheme corvine
 
 " ---------------------basic settings--------------------------
+"
+" disable builtin plugins I'm not using, improve startup, less resources
+let g:loaded_tutor_mode_plugin = 1
+let g:loaded_zipPlugin = 1
+let g:loaded_zip = 1
+let g:loaded_gzip = 1
+let g:loaded_2html_plugin = 1
+let g:loaded_netrwPlugin = 1
+let g:loaded_matchit = 1
+let g:loaded_tarPlugin = 1
+let g:loaded_shada_plugin = 1
+
 let g:cmake_generate_options = ["-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE"]
 
-" set leader key
+" set leader key to spacebar 
 nnoremap <Space> <Nop>
 let g:mapleader="\<Space>"
 
