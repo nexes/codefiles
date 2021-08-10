@@ -93,7 +93,7 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
 " setup fzf window to attach at the bottom
-let g:fzf_layout = { 'down': '25%' }
+let g:fzf_layout = { 'down': '30%' }
 
 " ------------------Search Functions------------------
 set grepprg=rg\ --vimgrep\ --smart-case\ --pretty\ --follow
@@ -112,7 +112,8 @@ function! SearchFunc(word)
 endfunction
 
 command! -nargs=+ Search call SearchFunc(<q-args>)
-command! -nargs=+ SearchAll execute 'silent grep! <args>' | copen
+command! -nargs=+ SearchAll execute 'Rg <args>'
+" command! -nargs=+ SearchAll execute 'silent grep! <args>' | copen
 
 " -------------------basic keybinding------------------------
 " ctrl-s to save buffer
