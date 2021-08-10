@@ -16,8 +16,6 @@ Plug 'hoob3rt/lualine.nvim'
 " -------------------------themes------------------------------
 Plug 'arzg/vim-corvine'
 
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " -----------------------theme setup----------------------------
@@ -95,6 +93,10 @@ set shortmess+=c
 " setup fzf window to attach at the bottom
 let g:fzf_layout = { 'down': '30%' }
 
+" setup pear-tree to not erase the closing paren.
+" this will remove the 'dot' repeat
+let g:pear_tree_repeatable_expand = 0
+
 " ------------------Search Functions------------------
 set grepprg=rg\ --vimgrep\ --smart-case\ --pretty\ --follow
 
@@ -138,7 +140,6 @@ nnoremap <silent> <c-o> :Buffers<cr>
 
 " ---------------------Plugin settings-------------------------
 "  TODO: move over to lua file
-" source ~/.config/nvim/plugin-config/airline-settings.vim
 source ~/.config/nvim/plugin-config/tree-settings.vim
 
 " luafile ~/.config/nvim/lua/telescope-config.lua
