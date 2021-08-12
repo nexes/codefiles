@@ -97,6 +97,9 @@ let g:fzf_layout = { 'down': '30%' }
 " this will remove the 'dot' repeat
 let g:pear_tree_repeatable_expand = 0
 
+" TermDebug
+let g:termdebug_wide = 1
+
 " ------------------Search Functions------------------
 set grepprg=rg\ --vimgrep\ --smart-case\ --pretty\ --follow
 
