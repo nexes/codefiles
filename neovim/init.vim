@@ -117,8 +117,8 @@ function! SearchFunc(word)
 endfunction
 
 command! -nargs=+ Search call SearchFunc(<q-args>)
-command! -nargs=+ SearchAll execute 'Rg <args>'
-" command! -nargs=+ SearchAll execute 'silent grep! <args>' | copen
+command! -nargs=+ SearchAll execute 'silent grep! <args>' | copen
+" command! -nargs=+ SearchAll execute 'Rg <args>'
 
 " -------------------basic keybinding------------------------
 " ctrl-s to save buffer
