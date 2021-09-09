@@ -145,7 +145,6 @@ nnoremap <silent> <c-o> :Buffers<cr>
 "  TODO: move over to lua file
 source ~/.config/nvim/plugin-config/tree-settings.vim
 
-" luafile ~/.config/nvim/lua/telescope-config.lua
 luafile ~/.config/nvim/lua/lualine-config.lua
 luafile ~/.config/nvim/lua/lsp-config.lua
 luafile ~/.config/nvim/lua/lspsaga-config.lua
