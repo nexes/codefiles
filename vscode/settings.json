@@ -34,7 +34,6 @@
     "workbench.iconTheme": "awesome-icons",
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 16,
-    "search.mode": "reuseEditor",
     "editor.rulers": [
         90
     ],
@@ -53,5 +52,5 @@
     "rust-analyzer.lens.run": false,
     "rust-analyzer.lens.enable": false,
     "editor.lightbulb.enabled": false,
-    "errorLens.onSave": true
+    "search.mode": "newEditor"
 }
