@@ -48,5 +48,13 @@
         "key": "ctrl+down",
         "command": "-extension.vim_ctrl+down",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-extension.advancedNewFile"
     }
 ]

@@ -20,7 +20,6 @@
     "scm.inputFontFamily": "FiraCode Nerd Font",
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
-    "editor.matchBrackets": "never",
     "workbench.colorTheme": "Ocean Dark Extended",
     "C_Cpp.codeFolding": "Disabled",
     "editor.folding": false,
@@ -52,5 +51,6 @@
     "rust-analyzer.lens.run": false,
     "rust-analyzer.lens.enable": false,
     "editor.lightbulb.enabled": false,
-    "search.mode": "newEditor"
+    "search.mode": "newEditor",
+    "editor.matchBrackets": "near"
 }
