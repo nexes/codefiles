@@ -52,5 +52,6 @@
     "rust-analyzer.lens.enable": false,
     "editor.lightbulb.enabled": false,
     "search.mode": "newEditor",
-    "editor.matchBrackets": "near"
+    "editor.matchBrackets": "near",
+    "vim.useSystemClipboard": true
 }
