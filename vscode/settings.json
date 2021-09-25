@@ -20,7 +20,6 @@
     "scm.inputFontFamily": "FiraCode Nerd Font",
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
-    "workbench.colorTheme": "Ocean Dark Extended",
     "C_Cpp.codeFolding": "Disabled",
     "editor.folding": false,
     "C_Cpp.default.cppStandard": "c++17",
@@ -53,5 +52,6 @@
     "editor.lightbulb.enabled": false,
     "search.mode": "newEditor",
     "editor.matchBrackets": "near",
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "workbench.colorTheme": "Ocean Dark Extended"
 }
