@@ -1,5 +1,7 @@
 {
+    "telemetry.telemetryLevel": "error",
     "breadcrumbs.enabled": false,
+    "window.menuBarVisibility": "toggle",
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "vscode-seedling-icon-theme-plus",
@@ -71,7 +73,14 @@
         "[Default Dark+]": {
             "activityBar.background": "#1e1e1e",
             "editorGroupHeader.tabsBackground": "#1e1e1e",
-            "titleBar.activeBackground": "#1e1e1e"
+            "titleBar.activeBackground": "#1e1e1e",
+            "tab.activeBorder": "#0051ff"
         }
-    }
+    },
+    "editor.find.seedSearchStringFromSelection": "selection",
+    "files.eol": "\n",
+    "files.hotExit": "off",
+    "window.restoreWindows": "none",
+    "editor.find.autoFindInSelection": "multiline",
+    "workbench.editor.decorations.colors": false
 }
