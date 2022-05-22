@@ -3,7 +3,6 @@
     "breadcrumbs.enabled": false,
     "window.menuBarVisibility": "toggle",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "vscode-seedling-icon-theme-plus",
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 16,
@@ -15,9 +14,9 @@
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.folding": false,
     "editor.fontLigatures": true,
-    "editor.rulers": [
-        90
-    ],
+    // "editor.rulers": [
+    //     80
+    // ],
     "editor.hover.enabled": false,
     "editor.snippetSuggestions": "none",
     "editor.formatOnSave": true,
@@ -28,32 +27,20 @@
     "editor.fontSize": 13,
     "editor.peekWidgetDefaultFocus": "editor",
     "editor.trimAutoWhitespace": false,
-    "editor.renderIndentGuides": false,
-    "editor.highlightActiveIndentGuide": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
     "explorer.openEditors.visible": 0,
     "files.trimTrailingWhitespace": true,
     "files.simpleDialog.enable": true,
     "scm.inputFontFamily": "FiraCode Nerd Font",
-    "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-    "C_Cpp.codeFolding": "Disabled",
-    "C_Cpp.default.cppStandard": "c++17",
-    "C_Cpp.default.cStandard": "c99",
-    "C_Cpp.formatting": "clangFormat",
-    "C_Cpp.suggestSnippets": false,
     "rust-analyzer.hoverActions.enable": false,
     "rust-analyzer.inlayHints.chainingHints": false,
     "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.lens.run": false,
     "rust-analyzer.lens.enable": false,
     "search.mode": "newEditor",
-    "C_Cpp.vcFormat.newLine.beforeElse": false,
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
     "vim.easymotion": true,
-    "vim.textwidth": 90,
     "vim.cursorStylePerMode.insert": "line",
     "vim.useCtrlKeys": false,
     "vim.showcmd": false,
@@ -74,7 +61,10 @@
             "activityBar.background": "#1e1e1e",
             "editorGroupHeader.tabsBackground": "#1e1e1e",
             "titleBar.activeBackground": "#1e1e1e",
-            "tab.activeBorder": "#0051ff"
+            "tab.activeBorder": "#0081ff",
+            "tab.activeBackground": "#393939",
+            "tab.inactiveBackground": "#1e1e1e",
+            "tab.unfocusedActiveBackground": "#1e1e1e",
         }
     },
     "editor.find.seedSearchStringFromSelection": "selection",
@@ -82,5 +72,23 @@
     "files.hotExit": "off",
     "window.restoreWindows": "none",
     "editor.find.autoFindInSelection": "multiline",
-    "workbench.editor.decorations.colors": false
+    "workbench.editor.decorations.colors": false,
+    "doxdocgen.generic.authorEmail": "joeberria@gmail.com",
+    "doxdocgen.generic.authorName": "Joe Berria",
+    "doxdocgen.generic.boolReturnsTrueFalse": false,
+    "files.exclude": {
+        "**/build": true
+    },
+    "remote.SSH.remotePlatform": {
+        "csslab12.uwb.edu": "linux"
+    },
+    "cmake.configureOnOpen": false,
+    "editor.guides.indentation": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "C_Cpp.codeFolding": "Disabled",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.suggestSnippets": false,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Linux, AllowShortFunctionsOnASingleLine: None}"
 }
