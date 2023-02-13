@@ -1,113 +1,121 @@
-    {
-        "telemetry.telemetryLevel": "error",
-        "workbench.startupEditor": "none",
-        "workbench.iconTheme": "vscode-seedling-icon-theme-plus",
-        "workbench.tree.renderIndentGuides": "always",
-        "workbench.tree.indent": 16,
-        "workbench.editor.restoreViewState": false,
-        "workbench.activityBar.visible": true,
-        "editor.cursorBlinking": "solid",
-        "editor.minimap.enabled": false,
-        "editor.occurrencesHighlight": false,
-        "editor.folding": false,
-        "editor.fontLigatures": true,
-        // "editor.rulers": [
-        //     80
-        // ],
-        "editor.hover.enabled": false,
-        "editor.snippetSuggestions": "none",
-        "editor.formatOnSave": true,
-        "editor.quickSuggestions": {
-            "comments": "off",
-            "strings": "off",
-            "other": "off"
+{
+    "telemetry.telemetryLevel": "error",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "vscode-seedling-icon-theme-plus",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 16,
+    "workbench.editor.restoreViewState": false,
+    "workbench.activityBar.visible": true,
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.folding": false,
+    "editor.fontLigatures": true,
+    // "editor.rulers": [
+    //     80
+    // ],
+    "editor.hover.enabled": false,
+    "editor.snippetSuggestions": "none",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.lightbulb.enabled": false,
+    "editor.matchBrackets": "near",
+    "editor.fontFamily": "CaskaydiaCove Nerd Font",
+    "editor.peekWidgetDefaultFocus": "editor",
+    "editor.trimAutoWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "explorer.openEditors.visible": 0,
+    "files.trimTrailingWhitespace": true,
+    "files.simpleDialog.enable": true,
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+    "rust-analyzer.hover.actions.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.lens.run.enable": false,
+    "rust-analyzer.lens.enable": false,
+    "search.mode": "newEditor",
+    "vim.easymotion": true,
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.useCtrlKeys": false,
+    "vim.showcmd": false,
+    "vim.useSystemClipboard": true,
+    "vim.leader": " ",
+    "workbench.colorCustomizations": {
+        "[Pitch Black]": {
+            "sideBar.border": "#222",
+            "searchEditor.findMatchBackground": "#007acc",
+            "activityBarBadge.background": "#444477"
         },
-        "editor.suggestOnTriggerCharacters": false,
-        "editor.lightbulb.enabled": false,
-        "editor.matchBrackets": "near",
-        "editor.fontFamily": "CaskaydiaCove NF",
-        "editor.fontSize": 13,
-        "editor.peekWidgetDefaultFocus": "editor",
-        "editor.trimAutoWhitespace": false,
-        "diffEditor.ignoreTrimWhitespace": false,
-        "diffEditor.renderSideBySide": false,
-        "explorer.openEditors.visible": 0,
-        "files.trimTrailingWhitespace": true,
-        "files.simpleDialog.enable": true,
-        "terminal.integrated.fontFamily": "CaskaydiaCove NF",
-        "rust-analyzer.hover.actions.enable": false,
-        "rust-analyzer.inlayHints.chainingHints.enable": false,
-        "rust-analyzer.lens.run.enable": false,
-        "rust-analyzer.lens.enable": false,
-        "search.mode": "newEditor",
-        "vim.easymotion": true,
-        "vim.cursorStylePerMode.insert": "line",
-        "vim.useCtrlKeys": false,
-        "vim.showcmd": false,
-        "vim.useSystemClipboard": true,
-        "vim.leader": " ",
-        "workbench.colorCustomizations": {
-            "[Pitch Black]": {
-                "sideBar.border": "#222",
-                "searchEditor.findMatchBackground": "#007acc",
-                "activityBarBadge.background": "#444477"
-            },
-            "[Nord Deep]": {
-                "peekViewEditor.background": "#000000",
-                "peekViewResult.background": "#000000",
-                "peekViewEditorGutter.background": "#000000"
-            },
-            "[Default Dark+]": {
-                "activityBar.background": "#1e1e1e",
-                "editorGroupHeader.tabsBackground": "#1e1e1e",
-                "titleBar.activeBackground": "#1e1e1e",
-                "tab.activeBorder": "#0081ff",
-                "tab.activeBackground": "#393939",
-                "tab.inactiveBackground": "#1e1e1e",
-                "tab.unfocusedActiveBackground": "#1e1e1e",
+        "[Nord Deep]": {
+            "peekViewEditor.background": "#000000",
+            "peekViewResult.background": "#000000",
+            "peekViewEditorGutter.background": "#000000"
+        },
+        "[Default Dark+]": {
+            "activityBar.background": "#1e1e1e",
+            "editorGroupHeader.tabsBackground": "#1e1e1e",
+            "titleBar.activeBackground": "#1e1e1e",
+            "tab.activeBorder": "#0081ff",
+            "tab.activeBackground": "#393939",
+            "tab.inactiveBackground": "#1e1e1e",
+            "tab.unfocusedActiveBackground": "#1e1e1e",
+        }
+    },
+    "editor.find.seedSearchStringFromSelection": "selection",
+    "files.eol": "\n",
+    "files.hotExit": "off",
+    "window.restoreWindows": "none",
+    "editor.find.autoFindInSelection": "multiline",
+    "workbench.editor.decorations.colors": false,
+    "doxdocgen.generic.authorEmail": "joeberria@gmail.com",
+    "doxdocgen.generic.authorName": "Joe Berria",
+    "doxdocgen.generic.boolReturnsTrueFalse": false,
+    "remote.SSH.remotePlatform": {
+        "csslab12.uwb.edu": "linux"
+    },
+    "cmake.configureOnOpen": false,
+    "editor.guides.indentation": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "C_Cpp.codeFolding": "Disabled",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.suggestSnippets": false,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Linux, AllowShortFunctionsOnASingleLine: None}",
+    "git.confirmSync": false,
+    "rust-analyzer.completion.autoimport.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "*.mutable": {
+                "underline": false,
             }
-        },
-        "editor.find.seedSearchStringFromSelection": "selection",
-        "files.eol": "\n",
-        "files.hotExit": "off",
-        "window.restoreWindows": "none",
-        "editor.find.autoFindInSelection": "multiline",
-        "workbench.editor.decorations.colors": false,
-        "doxdocgen.generic.authorEmail": "joeberria@gmail.com",
-        "doxdocgen.generic.authorName": "Joe Berria",
-        "doxdocgen.generic.boolReturnsTrueFalse": false,
-        "files.exclude": {
-            "**/build": true
-        },
-        "remote.SSH.remotePlatform": {
-            "csslab12.uwb.edu": "linux"
-        },
-        "cmake.configureOnOpen": false,
-        "editor.guides.indentation": false,
-        "editor.guides.highlightActiveIndentation": false,
-        "C_Cpp.codeFolding": "Disabled",
-        "C_Cpp.default.cppStandard": "c++17",
-        "C_Cpp.formatting": "clangFormat",
-        "C_Cpp.suggestSnippets": false,
-        "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Linux, AllowShortFunctionsOnASingleLine: None}",
-        "git.confirmSync": false,
-        "rust-analyzer.completion.autoimport.enable": false,
-        "rust-analyzer.inlayHints.parameterHints.enable": false,
-        "rust-analyzer.inlayHints.typeHints.enable": false,
-        "editor.semanticTokenColorCustomizations": {
-            "enabled": true,
-            "rules": {
-                "*.mutable": {
-                    "underline": false,
-                }
-            }
-        },
-        "workbench.layoutControl.enabled": false,
-        "rust-analyzer.inlayHints.closingBraceHints.enable": false,
-        "workbench.colorTheme": "Slime",
-        "window.menuBarVisibility": "compact",
-        "breadcrumbs.enabled": false,
-        "terminal.integrated.enablePersistentSessions": false,
-        "problems.showCurrentInStatus": true,
-        "explorer.autoReveal": false
-    }
+        }
+    },
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "workbench.colorTheme": "Everforest Dark",
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "problems.showCurrentInStatus": true,
+    "explorer.autoReveal": false,
+    "workbench.layoutControl.enabled": false,
+    "search.exclude": {
+        "**/build": true,
+        "**/target": true
+    },
+    "window.menuBarVisibility": "toggle",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "extensions.ignoreRecommendations": true,
+    "editor.accessibilitySupport": "off",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "window.titleBarStyle": "custom",
+    "editor.detectIndentation": false,
+    "editor.wordWrapColumn": 90
+}
