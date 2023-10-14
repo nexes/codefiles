@@ -118,18 +118,26 @@
     "C_Cpp.clang_format_sortIncludes": false,
     "window.title": "${activeFolderShort}/${activeEditorShort}${separator}${rootName}${separator}${profileName}",
     "search.showLineNumbers": true,
-    "workbench.layoutControl.enabled": false,
     "hexeditor.columnWidth": 16,
     "hexeditor.showDecodedText": true,
     "hexeditor.defaultEndianness": "little",
     "workbench.editorAssociations": {
         "*.nes": "hexEditor.hexedit"
     },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.activityBar.visible": false,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "scm.diffDecorations": "gutter",
     "problems.decorations.enabled": false,
     "workbench.sideBar.location": "right",
-    "editor.inlayHints.enabled": "offUnlessPressed"
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.fontSize": 13,
+    "gitlens.showWelcomeOnInstall": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.telemetry.enabled": false,
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "gitlens.views.showRelativeDateMarkers": false,
+    "gitlens.graph.minimap.enabled": false,
+    "diffEditor.hideUnchangedRegions.enabled": true
 }
