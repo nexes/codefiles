@@ -3,8 +3,9 @@
     "workbench.tree.indent": 16,
     "workbench.startupEditor": "none",
     "workbench.editor.restoreViewState": false,
-    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.renderIndentGuides": "none",
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
     "editor.folding": false,
     "editor.wordWrapColumn": 90,
     "editor.formatOnSave": true,
@@ -18,7 +19,7 @@
     "editor.trimAutoWhitespace": false,
     "editor.snippetSuggestions": "none",
     "editor.overviewRulerBorder": false,
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.accessibilitySupport": "off",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
@@ -69,6 +70,17 @@
         },
         "[GitHub Dark]": {
             "focusBorder": "#242323"
+        },
+        "[GitHub Dark Dimmed]": {
+            "focusBorder": "#242323",
+            "activityBar.border": "#242323",
+            "sideBar.border": "#242323",
+            "tab.border": "#242323",
+            "titleBar.border": "#242323"
+        },
+        "[Visual Studio Dark - C++]": {
+            "focusBorder": "#242323",
+            "statusBar.background": "#242323"
         }
     },
     "editor.find.seedSearchStringFromSelection": "selection",
@@ -102,7 +114,6 @@
     "rust-analyzer.inlayHints.chainingHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
-    "workbench.colorTheme": "GitHub Dark",
     "breadcrumbs.enabled": false,
     "terminal.integrated.enablePersistentSessions": false,
     "problems.showCurrentInStatus": true,
@@ -127,7 +138,6 @@
     },
     "scm.diffDecorations": "gutter",
     "problems.decorations.enabled": false,
-    "workbench.sideBar.location": "right",
     "editor.inlayHints.enabled": "offUnlessPressed",
     "gitlens.showWelcomeOnInstall": false,
     "gitlens.currentLine.enabled": false,
