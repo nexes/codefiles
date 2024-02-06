@@ -5,7 +5,6 @@
     "workbench.editor.restoreViewState": false,
     "workbench.tree.renderIndentGuides": "none",
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-    "workbench.colorTheme": "Visual Studio Dark - C++",
     "editor.folding": false,
     "editor.wordWrapColumn": 90,
     "editor.formatOnSave": true,
@@ -13,7 +12,7 @@
     "editor.hover.enabled": false,
     "editor.matchBrackets": "near",
     "editor.cursorBlinking": "solid",
-    "editor.lightbulb.enabled": false,
+    "editor.lightbulb.enabled": "off",
     "editor.detectIndentation": false,
     "editor.guides.indentation": false,
     "editor.trimAutoWhitespace": false,
@@ -21,7 +20,6 @@
     "editor.overviewRulerBorder": false,
     "editor.occurrencesHighlight": "off",
     "editor.accessibilitySupport": "off",
-    "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
     "editor.peekWidgetDefaultFocus": "editor",
     "editor.hideCursorInOverviewRuler": true,
@@ -46,16 +44,6 @@
     "vim.useSystemClipboard": true,
     "vim.cursorStylePerMode.insert": "line",
     "workbench.colorCustomizations": {
-        "[Pitch Black]": {
-            "sideBar.border": "#222",
-            "searchEditor.findMatchBackground": "#007acc",
-            "activityBarBadge.background": "#444477"
-        },
-        "[Nord Deep]": {
-            "peekViewEditor.background": "#000000",
-            "peekViewResult.background": "#000000",
-            "peekViewEditorGutter.background": "#000000"
-        },
         "[Default Dark+]": {
             "activityBar.background": "#1e1e1e",
             "editorGroupHeader.tabsBackground": "#1e1e1e",
@@ -65,22 +53,19 @@
             "tab.inactiveBackground": "#1e1e1e",
             "tab.unfocusedActiveBackground": "#1e1e1e",
         },
+        "[Default Dark Modern]": {
+            "focusBorder": "#ffffff00",
+            "sideBar.border": "#ffffff00",
+            "activityBar.border": "#ffffff00",
+            "statusBar.border": "#ffffff00",
+            "titleBar.border": "#ffffff00",
+            "tab.border": "#ffffff00",
+            "editor.background": "#181818",
+            "editor.lineHighlightBackground": "#222222",
+            "activityBar.foreground": "#166ef2"
+        },
         "[Slime]": {
             "tab.border": "#282e2f"
-        },
-        "[GitHub Dark]": {
-            "focusBorder": "#242323"
-        },
-        "[GitHub Dark Dimmed]": {
-            "focusBorder": "#242323",
-            "activityBar.border": "#242323",
-            "sideBar.border": "#242323",
-            "tab.border": "#242323",
-            "titleBar.border": "#242323"
-        },
-        "[Visual Studio Dark - C++]": {
-            "focusBorder": "#242323",
-            "statusBar.background": "#242323"
         }
     },
     "editor.find.seedSearchStringFromSelection": "selection",
@@ -137,7 +122,6 @@
         "*.nes": "hexEditor.hexedit"
     },
     "scm.diffDecorations": "gutter",
-    "problems.decorations.enabled": false,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "gitlens.showWelcomeOnInstall": false,
     "gitlens.currentLine.enabled": false,
@@ -146,9 +130,14 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "workbench.layoutControl.enabled": false,
     "gitlens.graph.minimap.enabled": false,
+    "gitlens.views.showRelativeDateMarkers": false,
+    "workbench.layoutControl.enabled": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "window.menuBarVisibility": "toggle",
-    "gitlens.views.showRelativeDateMarkers": false
+    "cmake.showOptionsMovedNotification": false,
+    "problems.decorations.enabled": false,
+    "editor.minimap.maxColumn": 80,
+    "window.commandCenter": false,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "hidden"
 }
