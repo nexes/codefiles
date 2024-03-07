@@ -40,7 +40,6 @@
     "search.mode": "reuseEditor",
     "vim.leader": " ",
     "vim.showcmd": false,
-    "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     "vim.cursorStylePerMode.insert": "line",
     "workbench.colorCustomizations": {
@@ -63,6 +62,11 @@
             "editor.background": "#181818",
             "editor.lineHighlightBackground": "#222222",
             "activityBar.foreground": "#166ef2"
+        },
+        "[Ayu Mirage]": {
+            "focusBorder": "#ffffff00",
+            "editorCursor.foreground": "#44a3db",
+            "editorCursor.background": "#000000"
         },
         "[Slime]": {
             "tab.border": "#282e2f"
@@ -112,7 +116,6 @@
     "extensions.ignoreRecommendations": true,
     "window.titleBarStyle": "custom",
     "security.workspace.trust.untrustedFiles": "open",
-    "C_Cpp.clang_format_sortIncludes": false,
     "window.title": "${activeFolderShort}/${activeEditorShort}${separator}${rootName}${separator}${profileName}",
     "search.showLineNumbers": true,
     "hexeditor.columnWidth": 16,
@@ -123,21 +126,26 @@
     },
     "scm.diffDecorations": "gutter",
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "gitlens.showWelcomeOnInstall": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.telemetry.enabled": false,
-    "gitlens.plusFeatures.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.graph.minimap.enabled": false,
-    "gitlens.views.showRelativeDateMarkers": false,
     "workbench.layoutControl.enabled": false,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "cmake.showOptionsMovedNotification": false,
     "problems.decorations.enabled": false,
     "editor.minimap.maxColumn": 80,
     "window.commandCenter": false,
     "editor.minimap.enabled": false,
-    "workbench.activityBar.location": "hidden"
+    "workbench.activityBar.location": "hidden",
+    "editor.indentSize": "tabSize",
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "workbench.colorTheme": "Ayu Mirage",
+    "editor.fontSize": 13,
+    "workbench.sideBar.location": "right",
+    "editor.scrollbar.vertical": "hidden",
+    "diffEditor.hideUnchangedRegions.enabled": true
 }
