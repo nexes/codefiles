@@ -72,6 +72,11 @@
             "tab.border": "#282e2f"
         }
     },
+    "editor.tokenColorCustomizations": {
+        "[Ayu Mirage]": {
+            "strings": "#95b851"
+        }
+    },
     "editor.find.seedSearchStringFromSelection": "selection",
     "files.eol": "\n",
     "files.hotExit": "off",
@@ -143,9 +148,11 @@
     "[typescriptreact]": {
         "editor.tabSize": 2
     },
-    "workbench.colorTheme": "Ayu Mirage",
     "editor.fontSize": 13,
-    "workbench.sideBar.location": "right",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "window.menuBarVisibility": "compact",
+    "vim.useCtrlKeys": false,
     "editor.scrollbar.vertical": "hidden",
-    "diffEditor.hideUnchangedRegions.enabled": true
+    "workbench.colorTheme": "Ayu Mirage",
+    "editor.stickyScroll.enabled": false
 }
