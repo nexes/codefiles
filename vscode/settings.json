@@ -77,7 +77,7 @@
     },
     "editor.tokenColorCustomizations": {
         "[Ayu Mirage]": {
-            "strings": "#95b851"
+            "strings": "#6CC289"
         }
     },
     "editor.find.seedSearchStringFromSelection": "selection",
