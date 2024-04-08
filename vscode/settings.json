@@ -37,6 +37,9 @@
     "explorer.decorations.colors": false,
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "search.mode": "reuseEditor",
     "vim.leader": " ",
     "vim.showcmd": false,
@@ -109,7 +112,6 @@
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "breadcrumbs.enabled": false,
-    "terminal.integrated.enablePersistentSessions": false,
     "problems.showCurrentInStatus": true,
     "explorer.autoReveal": false,
     "search.exclude": {
@@ -117,7 +119,6 @@
         "**/build": true,
         "**/target": true
     },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "extensions.ignoreRecommendations": true,
     "window.titleBarStyle": "custom",
     "security.workspace.trust.untrustedFiles": "open",
@@ -137,7 +138,6 @@
     "editor.minimap.maxColumn": 80,
     "window.commandCenter": false,
     "editor.minimap.enabled": false,
-    "workbench.activityBar.location": "hidden",
     "editor.indentSize": "tabSize",
     "[javascript]": {
         "editor.tabSize": 2
@@ -150,9 +150,14 @@
     },
     "editor.fontSize": 13,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "window.menuBarVisibility": "compact",
     "vim.useCtrlKeys": false,
     "editor.scrollbar.vertical": "hidden",
     "workbench.colorTheme": "Ayu Mirage",
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git-graph.repository.commits.fetchAvatars": true,
+    "git-graph.showStatusBarItem": false,
+    "window.menuBarVisibility": "compact",
+    "workbench.activityBar.location": "hidden",
+    "remote.autoForwardPortsSource": "hybrid",
 }
