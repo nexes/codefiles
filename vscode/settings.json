@@ -1,15 +1,15 @@
 {
     "telemetry.telemetryLevel": "error",
     "workbench.tree.indent": 16,
+    "workbench.colorTheme": "Darcula Contrast",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "left",
     "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.editor.restoreViewState": false,
     "workbench.tree.renderIndentGuides": "none",
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
     "editor.folding": false,
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "editor.lineHeight": 1.6,
     "editor.wordWrapColumn": 90,
     "editor.formatOnSave": true,
@@ -26,8 +26,6 @@
     "editor.stickyScroll.enabled": false,
     "editor.occurrencesHighlight": "off",
     "editor.accessibilitySupport": "off",
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.horizontal": "hidden",
     "editor.peekWidgetDefaultFocus": "editor",
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.hideCursorInOverviewRuler": true,
@@ -44,9 +42,6 @@
     "explorer.openEditors.visible": 1,
     "explorer.decorations.colors": false,
     "files.trimTrailingWhitespace": true,
-    "terminal.integrated.fontWeightBold": "normal",
-    "terminal.integrated.enablePersistentSessions": false,
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "search.mode": "reuseEditor",
     "vim.leader": " ",
     "vim.showcmd": false,
@@ -54,24 +49,59 @@
     "vim.useSystemClipboard": true,
     "vim.cursorStylePerMode.insert": "line",
     "workbench.colorCustomizations": {
-        "[Ayu Mirage]": {
-            "focusBorder": "#ffffff00",
-            "editorCursor.foreground": "#44a3db",
-            "editorCursor.background": "#000000",
-        },
-        "[Ayu Mirage Bordered]": {
-            "focusBorder": "#ffffff00",
-            "editorCursor.foreground": "#44a3db",
-            "editorCursor.background": "#000000",
-        },
+        "[Darcula Contrast]": {
+            "editor.background": "#292c33",
+            "sideBar.background": "#2c2f37",
+            "statusBar.border": "#1f2127",
+            "statusBar.background": "#1f2127",
+            "statusBar.foreground": "#c1c1c1",
+            "tab.activeBackground": "#292C33",
+            "tab.inactiveBackground": "#30343D",
+            "editorGroupHeader.tabsBackground": "#30343D",
+            "titleBar.activeBackground": "#30343D",
+            "titleBar.inactiveBackground": "#30343D",
+            "editor.lineHighlightBackground": "#2E323A",
+            "panel.background": "#1f2127",
+            "terminal.background": "#1f2127"
+        }
     },
     "editor.tokenColorCustomizations": {
-        "[Ayu Mirage]": {
-            "strings": "#6CC289"
-        },
-        "[Ayu Mirage Bordered]": {
-            "strings": "#6CC289"
-        },
+        "numbers": "#B99770",
+        "functions": "#7FABE5",
+        "comments": "#5e6165",
+        "[Darcula Contrast]": {
+            "textMateRules": [
+                {
+                    "scope": "support.type.primitive.rust",
+                    "settings": {
+                        "foreground": "#7cb0bc"
+                    }
+                },
+                {
+                    "scope": "variable.other.property",
+                    "settings": {
+                        "foreground": "#c47978"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.class",
+                        "entity.name.type.struct.rust",
+                        "entity.name.type.trait.rust",
+                        "entity.name.type.enum.rust"
+                    ],
+                    "settings": {
+                        "foreground": "#7cb0bc"
+                    }
+                },
+                {
+                    "scope": "keyword.other.rust",
+                    "settings": {
+                        "foreground": "#ab7bcb"
+                    }
+                },
+            ]
+        }
     },
     "editor.find.seedSearchStringFromSelection": "selection",
     "files.eol": "\n",
@@ -82,11 +112,6 @@
         "csslab12.uwb.edu": "linux"
     },
     "cmake.configureOnOpen": false,
-    "C_Cpp.suggestSnippets": false,
-    "C_Cpp.codeFolding": "disabled",
-    "C_Cpp.formatting": "clangFormat",
-    "C_Cpp.default.cppStandard": "c++17",
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, ColumnLimit: 90, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Linux, AllowShortFunctionsOnASingleLine: None}",
     "git.confirmSync": false,
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
@@ -104,7 +129,6 @@
     "rust-analyzer.inlayHints.chainingHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
-    "breadcrumbs.enabled": false,
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontSize": 13,
@@ -147,4 +171,6 @@
     },
     "diffEditor.hideUnchangedRegions.enabled": true,
     "git.ignoreLegacyWarning": true,
+    "editor.scrollbar.horizontal": "hidden",
+    "breadcrumbs.enabled": false,
 }
