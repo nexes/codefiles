@@ -62,7 +62,8 @@
             "titleBar.inactiveBackground": "#30343D",
             "editor.lineHighlightBackground": "#2E323A",
             "panel.background": "#1f2127",
-            "terminal.background": "#1f2127"
+            "terminal.background": "#1f2127",
+            "diffEditor.insertedTextBackground": "#343c2600"
         }
     },
     "editor.tokenColorCustomizations": {
