@@ -1,10 +1,8 @@
 {
     "telemetry.telemetryLevel": "error",
     "workbench.tree.indent": 16,
-    "workbench.colorTheme": "Darcula Contrast",
     "workbench.startupEditor": "none",
-    "workbench.sideBar.location": "left",
-    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "right",
     "workbench.editor.restoreViewState": false,
     "workbench.tree.renderIndentGuides": "none",
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
@@ -48,62 +46,6 @@
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     "vim.cursorStylePerMode.insert": "line",
-    "workbench.colorCustomizations": {
-        "[Darcula Contrast]": {
-            "editor.background": "#292c33",
-            "sideBar.background": "#2c2f37",
-            "statusBar.border": "#1f2127",
-            "statusBar.background": "#1f2127",
-            "statusBar.foreground": "#c1c1c1",
-            "tab.activeBackground": "#292C33",
-            "tab.inactiveBackground": "#30343D",
-            "editorGroupHeader.tabsBackground": "#30343D",
-            "titleBar.activeBackground": "#30343D",
-            "titleBar.inactiveBackground": "#30343D",
-            "editor.lineHighlightBackground": "#2E323A",
-            "panel.background": "#1f2127",
-            "terminal.background": "#1f2127",
-            "diffEditor.insertedTextBackground": "#343c2600"
-        }
-    },
-    "editor.tokenColorCustomizations": {
-        "numbers": "#B99770",
-        "functions": "#7FABE5",
-        "comments": "#5e6165",
-        "[Darcula Contrast]": {
-            "textMateRules": [
-                {
-                    "scope": "support.type.primitive.rust",
-                    "settings": {
-                        "foreground": "#7cb0bc"
-                    }
-                },
-                {
-                    "scope": "variable.other.property",
-                    "settings": {
-                        "foreground": "#c47978"
-                    }
-                },
-                {
-                    "scope": [
-                        "entity.name.type.class",
-                        "entity.name.type.struct.rust",
-                        "entity.name.type.trait.rust",
-                        "entity.name.type.enum.rust"
-                    ],
-                    "settings": {
-                        "foreground": "#7cb0bc"
-                    }
-                },
-                {
-                    "scope": "keyword.other.rust",
-                    "settings": {
-                        "foreground": "#ab7bcb"
-                    }
-                },
-            ]
-        }
-    },
     "editor.find.seedSearchStringFromSelection": "selection",
     "files.eol": "\n",
     "files.hotExit": "off",
@@ -174,4 +116,10 @@
     "git.ignoreLegacyWarning": true,
     "editor.scrollbar.horizontal": "hidden",
     "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "my theme",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "workbench.activityBar.location": "hidden",
 }
