@@ -2,17 +2,15 @@
     "telemetry.telemetryLevel": "error",
     "workbench.tree.indent": 16,
     "workbench.startupEditor": "none",
-    "workbench.sideBar.location": "right",
     "workbench.editor.restoreViewState": false,
     "workbench.tree.renderIndentGuides": "none",
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "workbench.iconTheme": "ayu-mirage-zed",
     "editor.folding": false,
     "editor.fontSize": 14,
     "editor.lineHeight": 1.6,
     "editor.wordWrapColumn": 90,
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
-    "editor.hover.enabled": false,
     "editor.matchBrackets": "near",
     "editor.cursorBlinking": "solid",
     "editor.lightbulb.enabled": "off",
@@ -21,7 +19,6 @@
     "editor.trimAutoWhitespace": false,
     "editor.snippetSuggestions": "none",
     "editor.overviewRulerBorder": false,
-    "editor.stickyScroll.enabled": false,
     "editor.occurrencesHighlight": "off",
     "editor.accessibilitySupport": "off",
     "editor.peekWidgetDefaultFocus": "editor",
@@ -38,7 +35,6 @@
         "other": "off"
     },
     "explorer.openEditors.visible": 1,
-    "explorer.decorations.colors": false,
     "files.trimTrailingWhitespace": true,
     "search.mode": "reuseEditor",
     "vim.leader": " ",
@@ -50,7 +46,6 @@
     "files.eol": "\n",
     "files.hotExit": "off",
     "window.restoreWindows": "none",
-    "workbench.editor.decorations.colors": false,
     "remote.SSH.remotePlatform": {
         "csslab12.uwb.edu": "linux"
     },
@@ -62,6 +57,52 @@
             "*.mutable": {
                 "underline": false,
             }
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[Ayu Mirage Zed]": {
+            "editor.background": "#2a2d3b",
+            "focusBorder": "#2a2d3b00",
+            "list.activeSelectionBackground": "#5b5f74",
+            "list.focusBackground": "#5b5f74",
+            "list.inactiveSelectionBackground": "#5b5f74",
+            "list.inactiveSelectionForeground": "#cdd4f1",
+            "list.activeSelectionForeground": "#cdd4f1",
+            "tab.border": "#54565d00",
+            "tab.activeForeground": "#c3c7d8",
+            "panel.background": "#252935",
+            "quickInput.foreground": "#ADB5D5",
+            "quickInput.background": "#292C3B",
+            "quickInputList.focusForeground": "#c3c7d8",
+            "sideBar.border": "#363944",
+            "sideBar.foreground": "#ADB5D5",
+            "sideBar.background": "#252935",
+            "titleBar.activeBackground": "#232633",
+            "titleBar.border": "#232633",
+            "statusBar.background": "#232633",
+            "statusBar.border": "#232633",
+            "sideBarStickyScroll.border": "#ADB5D5",
+            "panelStickyScroll.border": "#ADB5D5",
+            "editorCursor.foreground": "#dbc4bf",
+            "activityBar.border": "#252935",
+            "activityBar.background": "#252935",
+        },
+    },
+    "editor.tokenColorCustomizations": {
+        "[Ayu Mirage Zed]": {
+            "strings": "#cde198",
+            "functions": "#dbc38a",
+            "keywords": "#B395D1",
+            "numbers": "#E4A47B",
+            "variables": "#d0d5ed",
+            "textMateRules": [
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#d0d5ed"
+                    }
+                }
+            ]
         }
     },
     "rust-analyzer.lens.enable": false,
@@ -115,11 +156,17 @@
     "diffEditor.hideUnchangedRegions.enabled": true,
     "git.ignoreLegacyWarning": true,
     "editor.scrollbar.horizontal": "hidden",
-    "breadcrumbs.enabled": false,
-    "workbench.colorTheme": "my theme",
+    "workbench.colorTheme": "Ayu Mirage Zed",
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
     ],
-    "workbench.activityBar.location": "hidden",
+    "editor.stickyScroll.enabled": false,
+    "breadcrumbs.filePath": "last",
+    "breadcrumbs.icons": false,
+    "breadcrumbs.symbolPath": "last",
+    "breadcrumbs.enabled": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.hover.enabled": false,
 }
