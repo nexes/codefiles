@@ -169,4 +169,5 @@
     "workbench.editor.highlightModifiedTabs": true,
     "editor.scrollbar.vertical": "hidden",
     "editor.hover.enabled": false,
+    "workbench.sideBar.location": "right",
 }
